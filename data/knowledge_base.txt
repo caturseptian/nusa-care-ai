@@ -1,0 +1,221 @@
+# BASIS PENGETAHUAN NUSACARE
+# Dokumen ini berisi informasi resmi (fiktif) tentang platform NusaCare.
+# Format: setiap topik dipisah baris kosong (paragraf) untuk mempermudah chunking RAG.
+
+==================================================================
+TENTANG NUSACARE
+==================================================================
+
+NusaCare adalah platform layanan publik digital fiktif berbasis web yang menyatukan layanan kependudukan, kesehatan, pajak, pendidikan, dan pengaduan masyarakat dalam satu portal. NusaCare hanya dapat diakses melalui situs web https://nusa-care-ai.streamlit.app dari peramban (browser) di komputer maupun ponsel.
+
+NusaCare TIDAK memiliki aplikasi Android maupun iOS. NusaCare juga TIDAK tersedia di Google Play Store maupun Apple App Store. Hindari aplikasi pihak ketiga yang mengaku sebagai "NusaCare" — itu adalah aplikasi palsu yang berpotensi mencuri data Anda.
+
+Visi NusaCare adalah mempermudah masyarakat Indonesia mengakses layanan publik yang cepat, transparan, dan akuntabel tanpa harus datang ke kantor pemerintah secara fisik. Portal NusaCare beroperasi 24 jam untuk pengajuan layanan mandiri (self-service), sementara customer support tersedia setiap hari pukul 07.00 - 22.00 WIB.
+
+==================================================================
+MENGGUNAKAN NUSACARE TANPA AKUN
+==================================================================
+
+NusaCare TIDAK menggunakan sistem registrasi atau akun pengguna. Anda tidak perlu mendaftar, membuat username, membuat kata sandi, ataupun login. Cukup buka https://nusa-care-ai.streamlit.app pada peramban Anda, pilih layanan yang dibutuhkan, lalu isi formulir permohonan.
+
+Setiap permohonan layanan diverifikasi secara terpisah dengan mekanisme berikut:
+1. Anda memasukkan Nomor Induk Kependudukan (NIK) sesuai KTP elektronik.
+2. Anda memasukkan nomor handphone aktif untuk menerima OTP.
+3. Sistem mengirim kode OTP via SMS; Anda memasukkannya ke formulir.
+4. Untuk layanan sensitif, sistem juga meminta foto KTP elektronik dan swafoto liveness.
+
+Setelah permohonan terkirim, Anda akan menerima nomor tiket permohonan via SMS dan/atau email yang Anda isi pada formulir. Simpan nomor tiket tersebut untuk mengecek status melalui menu "Cek Status Permohonan" di portal — cukup masukkan NIK dan nomor tiket; tidak perlu login.
+
+==================================================================
+VERIFIKASI IDENTITAS PER TRANSAKSI
+==================================================================
+
+Karena NusaCare tidak menggunakan akun permanen, verifikasi identitas dilakukan setiap kali Anda mengajukan permohonan layanan sensitif (mis. perpanjangan KTP, lapor SPT, pengaduan resmi).
+
+Langkah verifikasi:
+1. Pada halaman layanan, isi NIK dan nomor handphone aktif.
+2. Klik "Kirim OTP". Kode OTP dikirim via SMS ke nomor yang Anda isi.
+3. Masukkan kode OTP di formulir.
+4. Untuk layanan tertentu, unggah foto KTP elektronik (sisi depan, terbaca jelas, tanpa pantulan cahaya) dan lakukan swafoto liveness sesuai instruksi (kedipan mata).
+5. Lanjutkan mengisi formulir permohonan; sistem akan memverifikasi secara otomatis.
+
+Verifikasi otomatis biasanya selesai dalam beberapa menit. Bila perlu verifikasi manual (mis. data tidak cocok dengan Dukcapil), proses dapat memakan waktu hingga 1 x 24 jam hari kerja, dan Anda menerima notifikasi via SMS/email saat selesai.
+
+==================================================================
+LAYANAN KEPENDUDUKAN
+==================================================================
+
+NusaCare menyediakan layanan kependudukan terintegrasi dengan Dukcapil. Semua layanan diajukan melalui formulir di portal, tanpa registrasi akun.
+
+Perpanjangan KTP elektronik:
+- Buka https://nusa-care-ai.streamlit.app, pilih "Layanan Kependudukan" > "Perpanjang KTP".
+- Isi NIK dan nomor handphone, lakukan verifikasi OTP.
+- Unggah foto KTP lama dan foto wajah terbaru dengan latar putih.
+- Pilih kantor Dukcapil terdekat untuk pengambilan KTP fisik (gratis).
+- Estimasi waktu proses: 7-14 hari kerja. Status dapat dipantau via "Cek Status Permohonan" dengan NIK dan nomor tiket.
+
+Pembuatan/Update Kartu Keluarga (KK):
+- Pilih "Layanan Kependudukan" > "KK Baru/Update".
+- Lakukan verifikasi OTP, lalu unggah dokumen pendukung: surat nikah, akta lahir anak (jika ada), dan KK lama (jika ada perubahan data).
+- Verifikasi RT/RW dilakukan secara digital.
+- Estimasi waktu proses: 5-10 hari kerja.
+
+Pembuatan Akta Kelahiran:
+- Pilih "Layanan Kependudukan" > "Akta Kelahiran".
+- Lakukan verifikasi OTP, lalu unggah surat keterangan lahir dari rumah sakit/bidan, KTP dan KK orang tua.
+- Akta digital diterbitkan dalam 3-5 hari kerja; akta fisik dapat diambil di kantor Dukcapil terkait.
+
+Seluruh layanan kependudukan di NusaCare GRATIS sesuai ketentuan layanan publik dasar. Hati-hati terhadap pihak yang meminta biaya percepatan; NusaCare tidak pernah memungut biaya semacam itu.
+
+==================================================================
+LAYANAN KESEHATAN
+==================================================================
+
+Cek status BPJS Kesehatan:
+- Buka portal, pilih "Layanan Kesehatan" > "Cek BPJS".
+- Masukkan NIK dan verifikasi OTP.
+- Sistem menampilkan status keaktifan, kelas iuran, dan tagihan bulan berjalan.
+- Pembayaran iuran BPJS dapat dilakukan langsung melalui menu "Bayar BPJS" dengan biaya admin Rp 0.
+
+Pendaftaran vaksin:
+- Pilih "Layanan Kesehatan" > "Jadwal Vaksin".
+- Isi NIK dan verifikasi OTP, lalu pilih jenis vaksin (mis. influenza, HPV, hepatitis B, atau booster sesuai program pemerintah).
+- Pilih puskesmas atau rumah sakit terdekat dan jadwal yang tersedia.
+- Anda akan menerima QR code lewat email/SMS untuk ditunjukkan saat datang ke lokasi vaksinasi.
+
+Telekonsultasi dokter:
+- Tersedia 24 jam untuk konsultasi umum non-darurat.
+- Pilih "Layanan Kesehatan" > "Konsultasi Dokter", lakukan verifikasi OTP, lalu pilih spesialisasi (umum, anak, kulit, jiwa, dan lainnya).
+- Tarif mulai Rp 25.000 untuk dokter umum; dapat di-cover BPJS untuk peserta aktif kelas 1, 2, atau 3.
+
+Untuk keadaan darurat medis, segera hubungi 119 atau datang ke IGD terdekat. Telekonsultasi NusaCare TIDAK menggantikan layanan gawat darurat.
+
+==================================================================
+LAYANAN PAJAK
+==================================================================
+
+Pendaftaran NPWP online:
+- Pilih "Layanan Pajak" > "Daftar NPWP".
+- Lakukan verifikasi NIK + OTP + foto KTP + swafoto liveness.
+- Lengkapi formulir: status (karyawan/wirausaha/lainnya), alamat, dan informasi penghasilan.
+- NPWP elektronik diterbitkan dalam 1-3 hari kerja dan dikirim ke email yang Anda isi pada formulir.
+
+Pelaporan SPT Tahunan:
+- Pilih "Layanan Pajak" > "Lapor SPT".
+- Lakukan verifikasi NIK + OTP + foto KTP + swafoto liveness.
+- Pilih jenis SPT (1770 SS untuk karyawan dengan penghasilan ≤ Rp 60 juta/tahun, 1770 S, atau 1770).
+- Sistem menarik data bukti potong dari pemberi kerja yang sudah terdaftar di sistem DJP.
+- Tinjau, tanda tangan elektronik, dan kirim. Bukti penerimaan elektronik (BPE) dikirim ke email yang Anda isi.
+
+Pembayaran PBB (Pajak Bumi dan Bangunan):
+- Pilih "Layanan Pajak" > "Bayar PBB".
+- Masukkan Nomor Objek Pajak (NOP) dari SPPT.
+- Bayar via transfer bank, e-wallet, atau virtual account. Tidak ada biaya admin tambahan.
+- Bukti pembayaran dapat diunduh dalam format PDF langsung dari halaman konfirmasi.
+
+==================================================================
+LAYANAN PENDIDIKAN
+==================================================================
+
+PPDB Online (Penerimaan Peserta Didik Baru):
+- Tersedia setiap tahun pada periode Mei-Juli, sesuai jadwal Dinas Pendidikan setempat.
+- Pilih "Layanan Pendidikan" > "PPDB", lalu pilih jenjang (SD, SMP, SMA/SMK).
+- Isi NIK calon siswa atau orang tua/wali, verifikasi OTP, lalu lengkapi formulir.
+- Sistem merekomendasikan sekolah berdasarkan zonasi alamat domisili.
+- Unggah nilai rapor, sertifikat prestasi (opsional), dan surat keterangan dari kelurahan jika diperlukan.
+
+Pendaftaran beasiswa NusaCerdas:
+- Beasiswa NusaCerdas adalah program beasiswa fiktif untuk siswa SMA dan mahasiswa S1 dari keluarga kurang mampu.
+- Periode pendaftaran: 1 Februari - 31 Maret setiap tahun.
+- Syarat: WNI, IPK minimal 3.00 (mahasiswa) atau nilai rata-rata rapor minimal 80 (siswa SMA), serta unggah Surat Keterangan Tidak Mampu (SKTM).
+- Pengumuman: 30 April. Pencairan: bertahap setiap semester.
+
+==================================================================
+PEMBAYARAN DAN METODE TRANSAKSI
+==================================================================
+
+NusaCare mendukung pembayaran via:
+- Transfer bank (BCA, Mandiri, BRI, BNI, dan bank daerah).
+- Virtual account (otomatis terbentuk per transaksi).
+- E-wallet (GoPay, OVO, DANA, ShopeePay, LinkAja).
+- QRIS (semua aplikasi pembayaran yang mendukung QRIS).
+
+Seluruh pembayaran terenkripsi dan diproses oleh penyedia jasa pembayaran resmi. NusaCare tidak menyimpan data kartu kredit/debit Anda.
+
+Untuk biaya layanan publik dasar (KTP, KK, akta kelahiran, lapor SPT, dst.), tidak ada biaya yang dipungut. Biaya hanya berlaku untuk layanan tambahan seperti telekonsultasi dokter atau cetak ulang dokumen fisik di luar masa berlaku.
+
+==================================================================
+KEAMANAN PENGGUNA
+==================================================================
+
+Tips keamanan saat menggunakan NusaCare:
+- Selalu pastikan Anda berada di alamat resmi https://nusa-care-ai.streamlit.app (perhatikan ikon gembok/HTTPS pada peramban). Hindari tautan dari pesan/email mencurigakan.
+- Gunakan jaringan internet yang tepercaya saat mengisi formulir layanan; hindari WiFi publik tanpa proteksi.
+- Jangan pernah membagikan kode OTP, NIK, foto KTP, atau swafoto kepada siapa pun, termasuk yang mengaku sebagai petugas NusaCare.
+- NusaCare tidak akan pernah meminta kode OTP, NIK, atau data kartu Anda melalui telepon, SMS, WhatsApp, atau email.
+- Jika menerima panggilan/pesan mencurigakan, laporkan melalui menu "Pengaduan" > "Penipuan".
+
+Cek Status Permohonan tanpa login:
+- Pilih menu "Cek Status Permohonan" di halaman utama portal.
+- Masukkan NIK dan nomor tiket permohonan yang Anda terima via SMS/email.
+- Sistem menampilkan status terkini (mis. "Diverifikasi", "Diproses", "Selesai - silakan ambil di kantor Dukcapil").
+
+Bila Anda kehilangan nomor tiket, kirim ulang permintaan via menu "Lupa Nomor Tiket" — masukkan NIK dan nomor handphone yang dipakai saat permohonan; nomor tiket akan dikirim ulang via SMS.
+
+==================================================================
+PENGADUAN DAN LAYANAN KONSUMEN
+==================================================================
+
+Cara mengajukan pengaduan:
+1. Buka portal, pilih menu "Pengaduan".
+2. Pilih kategori: layanan, infrastruktur, oknum petugas, atau penipuan.
+3. Lakukan verifikasi NIK + OTP.
+4. Tulis kronologi singkat dan unggah bukti foto/video jika ada.
+5. Tandai lokasi kejadian di peta (opsional).
+6. Kirim. Anda akan menerima nomor tiket pengaduan via SMS/email.
+
+Status pengaduan diperbarui melalui notifikasi SMS/email. Estimasi waktu tindak lanjut awal: maksimal 3 hari kerja.
+
+Customer support NusaCare dapat dihubungi melalui:
+- Live chat di portal (07.00-22.00 WIB setiap hari).
+- Email: support@nusa-care-ai.streamlit.app (respons 1 x 24 jam).
+- Telepon bebas pulsa: 0800-1234-5678 (07.00-22.00 WIB).
+
+NusaCare tidak melayani konsultasi melalui akun media sosial pribadi staf. Hindari akun palsu yang mengatasnamakan NusaCare.
+
+==================================================================
+FAQ - PERTANYAAN YANG SERING DIAJUKAN
+==================================================================
+
+T: Apakah NusaCare tersedia di Google Play Store atau App Store?
+J: Tidak. NusaCare adalah portal web dan TIDAK memiliki aplikasi Android maupun iOS. Anda hanya perlu membuka https://nusa-care-ai.streamlit.app dari peramban di komputer atau ponsel. Aplikasi apa pun yang mengaku "NusaCare" di toko aplikasi adalah palsu.
+
+T: Apakah saya perlu mendaftar atau membuat akun?
+J: Tidak. NusaCare tidak memerlukan registrasi maupun pembuatan akun. Anda cukup mengisi formulir layanan; setiap permohonan diverifikasi via NIK + OTP per transaksi.
+
+T: Apakah NusaCare berbayar?
+J: Tidak. Layanan kependudukan dasar, lapor SPT, PPDB, dan akses portal di NusaCare gratis. Hanya layanan tambahan (mis. konsultasi dokter swasta) yang berbayar dengan tarif transparan.
+
+T: Bagaimana cara mengecek status permohonan saya?
+J: Buka menu "Cek Status Permohonan" di portal, masukkan NIK dan nomor tiket yang Anda terima via SMS/email saat mengajukan permohonan. Tidak perlu login.
+
+T: Bagaimana jika saya kehilangan nomor tiket permohonan?
+J: Gunakan menu "Lupa Nomor Tiket" di portal. Masukkan NIK dan nomor handphone yang Anda pakai saat permohonan; nomor tiket akan dikirim ulang via SMS.
+
+T: Bagaimana jika nomor handphone yang saya pakai sudah tidak aktif?
+J: Ajukan permohonan baru menggunakan nomor handphone aktif yang baru, atau datang langsung ke kantor Dukcapil terdekat dengan KTP asli untuk verifikasi manual.
+
+T: Apakah data saya aman?
+J: Ya. Data Anda dienkripsi end-to-end dan disimpan di pusat data dalam negeri sesuai UU Pelindungan Data Pribadi. NusaCare tidak menyimpan kata sandi (karena tidak ada akun) dan tidak menjual data ke pihak ketiga.
+
+T: Berapa lama proses verifikasi identitas?
+J: Verifikasi otomatis biasanya selesai dalam beberapa menit. Verifikasi manual dapat memakan waktu hingga 1 x 24 jam pada hari kerja.
+
+T: Bagaimana cara menghubungi NusaCare di luar jam operasional?
+J: Live chat dan telepon hanya tersedia 07.00-22.00 WIB. Di luar jam tersebut, gunakan email support@nusa-care-ai.streamlit.app; respons akan dikirim pada jam operasional berikutnya.
+
+T: Apakah NusaCare tersedia di luar Indonesia?
+J: Portal dapat diakses dari peramban di luar negeri, namun layanan publik tertentu (mis. pengambilan KTP fisik) tetap memerlukan kehadiran di Indonesia. Untuk layanan WNI di luar negeri, gunakan menu "NusaCare Diaspora" di portal.
+
+T: Apakah NusaCare memiliki API publik?
+J: Ya, untuk mitra resmi pemerintah dan instansi terverifikasi. Informasi lebih lanjut tersedia di portal pengembang https://developer.nusa-care-ai.streamlit.app.
